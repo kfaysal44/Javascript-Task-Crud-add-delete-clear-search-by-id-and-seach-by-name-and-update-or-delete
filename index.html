@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="scripts.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>create task management web application</title>
+</head>
+
+<body>
+  <div>
+    <section class="container">
+      <h1>Create Task Management Web Application</h1>
+      <form id="my-form">
+        <div>
+          <label for="id">Id</label>
+          <input type="number" id="id" min="1" name="value | number: 1.">
+
+
+        </div>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+
+        </div>
+        <div>
+          <label>Status</label>
+          <input type="text" id="status">
+        </div>
+        <div>
+          <label>Assign To</label>
+
+          <select id="assign" name="assign">
+            <option value="">Select Employee</option>
+            <option value="Usama">Usama</option>
+            <option value="Ali">Ali</option>
+            <option value="Obaid">Obaid</option>
+
+          </select>
+        </div>
+        <div>
+          <label>Is Completed</label>
+          <input type="radio" value='false' name="iscompleted">
+          <label>Not Completed</label>
+          <input type="radio" value='true' name="iscompleted">
+
+        </div>
+        <div>
+          <label>Date</label>
+          <input type="date" id="date">
+        </div>
+
+        <input type="button" id="button" class="btn" value="Create Task" onclick="addTask()">
+        <input type="button" id="button" class="btn" value="Show all tasks" onclick="showTask()">
+       
+
+        <input type="button" id="button" class="btn" value="Clear Data" onclick="clrData()">
+        <input type="button" id="button" class="btn" value="Search By ID" onclick="searchById();searchTable()">
+        <input type="button" id="button" class="btn" value="Search By Name" onclick="searchByName();searchNamee()">
+        <input type="button" id="button" class="btn" value="Update Task" onclick=" updateTask()">
+        <input type="button" id="button" class="btn" value="deleteTask" onclick="deleteTask()">
+
+
+      </form>
+      <div id="table" class="table" </div>
+      <div id="searchTable" class="searchTable">
+       
+
+    </section>
+  </div>
+</body>
+
+</html>
